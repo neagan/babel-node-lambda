@@ -14,7 +14,6 @@ else
     run)
       case $2 in
         -H|--handler)
-          echo "hurr"
           IFS=' . ' read -r -a HANDLER <<< $3
 
           babel ${HANDLER[0]}.js --out-file ${HANDLER[0]}-compiled.js
