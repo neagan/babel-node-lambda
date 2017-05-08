@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel test/index.js"
+    "test": "echo \"No test specified\""
   },
   "bin": {
     "babel-node-lambda": "./bin/babel-node-lambda.sh"

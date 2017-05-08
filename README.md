@@ -7,8 +7,10 @@ A small script to utilize [node-lambda](https://github.com/motdotla/node-lambda)
 npm install -g babel-node-lambda
 ```
 
-### Commands
+### Setup
+This package requires that you have [babel](https://github.com/babel/babel) installed and correctly configured with a `.babelrc` file. For more information about babel configuration please see the [setup documentation](http://babeljs.io/docs/setup/) for `babel-cli`.
 
+### Commands
 ```
 babel-node-lambda run
 ```
@@ -16,5 +18,5 @@ Transpiles AWS Lambda function prior to running `node-lambda run`. See documenta
 
 The following flags are currently supported:
 ```
--H, --handler [index.handler]
+-H, --handler
 ```
