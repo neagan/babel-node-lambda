@@ -8,7 +8,7 @@
     "babel": "babel test/index.js"
   },
   "bin": {
-    "babel-node-lambda": ""
+    "babel-node-lambda": "./bin/babel-node-lambda.sh"
   },
   "repository": {
     "type": "git",
@@ -21,14 +21,13 @@
   },
   "homepage": "https://github.com/neagan/babel-node-lambda#readme",
   "dependencies": {
-    "babel-cli": "^6.24.1",
     "node-lambda": "^0.9.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.4.0",
-    "tardis-core": "^0.4.5"
+    "babel-preset-env": "^1.4.0"
   }
 }
