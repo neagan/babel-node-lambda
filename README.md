@@ -1,5 +1,7 @@
 # babel-node-lambda
-A small script to utilize [node-lambda](https://github.com/motdotla/node-lambda) with your existing [babel](https://github.com/babel/babel) configuration.
+Use node-lambda with babel
+
+`babel-node-lambda` allows you to utilize [node-lambda](https://github.com/motdotla/node-lambda) with your existing [babel](https://github.com/babel/babel) configuration.
 
 ## Getting Started
 ### Installation
