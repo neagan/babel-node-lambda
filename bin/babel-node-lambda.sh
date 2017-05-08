@@ -4,7 +4,7 @@ if [ ! -f .babelrc ]; then
   cp node_modules/babel-node-lambda/.babelrc .
 fi
 
-if [ $# -lt 1 ]; then
+if [ $# -lt 2 ]; then
   babel index.js --out-file index-compiled.js
   node-lambda run --handler index-compiled.handler
 
