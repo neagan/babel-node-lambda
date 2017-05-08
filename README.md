@@ -11,6 +11,7 @@ npm install -g babel-node-lambda
 This package requires that you have [babel](https://github.com/babel/babel) installed and correctly configured with a `.babelrc` file. For more information about babel configuration please see the [setup documentation](http://babeljs.io/docs/setup/) for `babel-cli`.
 
 ### Commands
+#### run
 ```
 babel-node-lambda run
 ```
