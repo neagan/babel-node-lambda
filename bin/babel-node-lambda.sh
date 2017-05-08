@@ -11,16 +11,24 @@ if [ $# -lt 1 ]; then
   rm index-compiled.js
 else
   case $1 in
-    -H|--handler)
-      echo "hurr"
-      IFS=' . ' read -r -a HANDLER <<< $2
+    run)
+      case $2 in
+        -H|--handler)
+          echo "hurr"
+          IFS=' . ' read -r -a HANDLER <<< $3
 
-      babel ${HANDLER[0]}.js --out-file ${HANDLER[0]}-compiled.js
-      node-lambda run --handler ${HANDLER[0]}-compiled.${HANDLER[1]}
+          babel ${HANDLER[0]}.js --out-file ${HANDLER[0]}-compiled.js
+          node-lambda run --handler ${HANDLER[0]}-compiled.${HANDLER[1]}
 
-      rm ${HANDLER[0]}-compiled.js
+          rm ${HANDLER[0]}-compiled.js
+          ;;
+        *)
+          echo Flag \"$2\" is not currently supported
+      esac
       ;;
     *)
-      echo Flag \"$1\" is not currently supported
+      echo Command \"$1\" is not currently supported
   esac
+
+
 fi
